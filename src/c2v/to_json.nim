@@ -51,7 +51,6 @@ proc csvToJson*(
 
   p.close()
 
-
 proc csvToJsonHash*(
   filename: string; ## CSV file
   separator = ','; ## CSV parser config
