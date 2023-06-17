@@ -91,7 +91,6 @@ when isMainModule:
       "print":  "Whether or not to print the produced JSON to stdout. If this is true then " &
                 "`out` is ignored.",
       "output": "The type of JSON output to produce. Accepted values: default, hash, array, colarr.",
-                # TODO: explain the different types of JSON outputs
       "minify": "Whether or not to minify the JSON output. If true, the `indent` option is ignored.",
       "indent": "How much, in spaces, to indent the JSON output. If `minify` is true, this option " &
                 "is ignored."
