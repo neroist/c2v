@@ -12,14 +12,14 @@ proc main(
   quote = '"', 
   escape: char = '\0',
   skip: bool = true,
-  `out` = "",
+  `out`: string = "",
   print: bool = false,
   output: string = "default",
   minify: bool = false,
   indent: int = 4,
   filename: seq[string]
 ) = 
-  ## Convert CSV file to JSON
+  ## Convert CSV file to JSON. JSON is prettified by default.
 
   # --- error checking
   if filename.len != 1:
