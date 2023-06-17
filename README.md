@@ -34,3 +34,8 @@ Options:
   -m, --minify    bool    false      Whether or not to minify the JSON output. If true, the `indent` option is ignored.
   -i=, --indent=  int     4          How much, in spaces, to indent the JSON output. If `minify` is true, this option is ignored.
 ```
+
+## Examples
+
+Example CSV data to test n play around with in C2V are found in the
+[`examples/`](examples/) directory.
