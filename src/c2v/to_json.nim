@@ -85,7 +85,7 @@ proc csvToJsonArr*(
   quote = '"';
   escape: char = '\0';
   skipInitialSpace: bool = true): JsonNode =
-  ## Convert CSV into an object instead of an array. First column is used as hash key.
+  ## Outputs an array of arrays, each nested array representing a CSV row.
 
   result = newJArray()
 
@@ -112,7 +112,9 @@ proc csvToJsonColArr*(
   quote = '"';
   escape: char = '\0';
   skipInitialSpace: bool = true): JsonNode =
-  ## Convert CSV into an object instead of an array. First column is used as hash key.
+  ## Similar to Array, except it outputs an object, with each key
+  ## representing a CSV header and each corresponding value being the array
+  ## of values under the header.
 
   result = newJObject()
 
